@@ -9,6 +9,7 @@
 ## Introduction
 
 Currently there is no streamlined way for an end user to rapidly create configuration and boilerplate code for any web application in any language other than a limited number of tools in a limited number of languages/frameworks. (This is excluding applications such as [wrappler](https://wappler.io/) for building without coding). Examples of existing tools are:
+
 - [angular-cli](https://cli.angular.io/)
 - [create-react-app](https://github.com/facebook/create-react-app) 
 
@@ -23,37 +24,44 @@ The following section describes a product that seeks to fill the void of auto ge
 A commandline tool for building boilerplate code for web applications in all major frontend frameworks, serverside languages, and databases. Allows for highly customizable builds via a JSON config file, or combines any of the following:
 - end user code
 - github boilerplate
-- cached code
+- cached code by the program
 
-Allows for the saving and sharing of config.json files, and boilerplate projects to hosted version control applications or on the end users system under an alias they can use as a reference for future builds or combined builds.  Allows for the option to apply code styling as specified by a style guide or code formatter. Installs all relevant packages specified.
+Allows for the saving and sharing of ```config.json``` files, and boilerplate projects to hosted version control applications or on the end users system under an alias they can use as a reference for future builds or combined builds.  Allows for the option to apply code styling as specified by a style guide or code formatter. Installs all relevant packages specified.
 
-A config.json file will look something like [this](../../template.json) As a commandline tool it will take flags and options as well as an optional config.json file determine what the end user would like to be performed.
+A ```config.json``` file will look something like [this](../../template.json) As a commandline tool it will take flags and options as well as an optional ```config.json``` file determine what the end user would like to be performed.
 
 
 ## Agile Build Process Specifications
 
+Each phase will contain support through commandline arguments and ship with default boilerplate for those listed in their corresponding **```Config.json```**.
+
+
 ### Initial Spec
 
-The minimum viable product will contain customization through a config.json for
+The minimum viable product will contain customization through a ```config.json``` for
 
 **Config.json**
-
+  - HTML
+  - CSS
+    - Less
+    - Sass
   - React
     - React Router
   - Redux integration
-  - Webpack
+  - Webpack. With the following predefined template options
     - Isomorphic option
     - Code splitting
+    - Hot reloading
   - Node
     - Express
     - Routing
   - Postgres, Sqlite3, MySql via:
     - Sequalize
     - Knex
+  - Git
+  - Github/Bitbucket
 
-**Commandline Arguments**
-
-All listed [here](../../FLAGS.md)
+**Supported Commandline Arguments [Here](../../FLAGS.md)**
 
 ### Second Iteration
 
@@ -62,18 +70,41 @@ The minimum viable product will contain customization through a config.json for
 **Config.json**
 
 - PHP
-  - Interfacing with sql databases
+  - Interfacing with SQL databases
   - Routing
-- Python
-  - Flask and Django Routing and interfacing with sql databases
+- Python: Flask and Django
+  - Routing
+  - Interfacing with SQL databases
+- Glup/Grunt
+- Mercurial
+- Full Webpack customization
 
 ### Third Iteration
 
-The minimum viable product will contain customization through a config.json for
+The minimum viable product will contain customization through a ```config.json``` for
 
-**Config.json**
+**```Config.json```**
 
 - Ruby On Rails
   - Routing
   - sql interfacing
 - all currently existing serverside integration with Mongodb and Redis
+- building companion site and addition of ```--share``` flag. Companion site will have:
+  - Login integration with github for connection of storing boilerplate to github
+  - via the ```--share``` flag users can upload config files or links to their github boilerplate on the companion site
+  - Extending the ```--import [url]``` flag to allow for downloading of ```config.json``` files from the companion site
+
+### Fourth Iteration
+
+The minimum viable product will contain customization through a ```config.json``` for
+
+**Config.json**
+
+- Java in Spring/Spring Boot
+  - Routing
+  - all previously supported db integration
+- GO
+  - Routing
+  - all previously supported db integration
+- Apache Config
+- NginX Config
