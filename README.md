@@ -4,6 +4,10 @@
 
 [SDLC description from tutorialspoint.com](https://www.tutorialspoint.com/sdlc/sdlc_overview.html)
 
+## Usage
+
+[Command Line Flags and arguments](./Flags.md)
+
 ## Current Support
 
 ### 1. Languages
