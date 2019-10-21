@@ -78,6 +78,7 @@ The minimum viable product will contain customization through a config.json for
 - Glup/Grunt
 - Mercurial
 - Full Webpack customization
+- add support for pulling snippets from [Bit](https://github.com/teambit/bit)
 
 ### Third Iteration
 
