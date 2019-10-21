@@ -1,8 +1,8 @@
 # SDLC Navigation
 
 1. Planning and Requirement Analysis
-2. [Defining Requirements](./DevelopmentLifeCycleProcess/2_DefiningRequirements/README.md)
-3. [Design and Architecture](./DevelopmentLifeCycleProcess/3_DesignAndArchitecture/REAME.md)
+2. [Defining Requirements](../2_DefiningRequirements/README.md)
+3. [Design and Architecture](../3_DesignAndArchitecture/README.md)
 
 # Planning and Requirement Analysis
 
