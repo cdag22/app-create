@@ -1,0 +1,200 @@
+# SDLC Navigation
+
+0. [Home](./README.md)
+1. [Planning and Requirement Analysis](././DevelopmentLifeCycleProcess/1_PlanningAndAnalysis/README.md)
+2. [Defining Requirements](./DevelopmentLifeCycleProcess/2_DefiningRequirements/README.md)
+3. [Design and Architecture](./DevelopmentLifeCycleProcess/3_DesignAndArchitecture/README.md)
+
+# Config.json
+
+```json
+{
+  "CONTAINS AUTO DETECTION FOR FILE TYPES THAT PROMPTS DOWNLOAD, OPTION TO IMPORT, OR DEFAULT CONFIG FOR FILE TYPE IF NOT SETUP": "",
+  "FOR ALL path KEYS": "IF FROM APP-CREATE VALIDATION IS DONE BASED ON THE LABELS OF THE SNIPPET TO SEE IF IT IS APPROPRIATE FOR INSERTION",  
+  "application": {
+    "type": "fullstack|frontend|server|os|",
+    "server": {
+      "language": "C#|GO|Python|Java|JavaScript|Ruby|PHP",
+      "framework": "express|RubyOnRails|Flask|Django|etc."
+    },
+    "client": {
+      "framework": "backbone|react|angular|vue|jquery|vanilla|ember|knockout|meteor|preact|polymer"
+    },
+    "packages": {
+      "npm": [
+        "names"
+      ],
+      "pip": [
+        "names"
+      ]
+    }
+  },
+
+  
+  "structure": {
+    "baseDir": {
+      "ABOUT": "IF PRESENT MUST HAVE NAME. 'name' will not be a real property",
+      "WHAT IT DOES": "Tells the program to insert everything into a new folder named 'name' or in the current directory the program is called from",
+      "name": "web-app-name"
+    },
+    "layout": {
+      "EXAMPLES BELOW": "ALL KEYS ARE EXAMPLE NAMES. IF KEY DOES NOT HAVE A '.' IT IS TREATED AS A DIR NAME TO CREATE ELSE A FILENAME TO CREATE",
+      "src": {
+        "template": {
+          "ABOUT": "IF TEMPLATE IS SPECIFIED AT ANY LEVEL of 'layout' the given template is used at that location",
+          "path": "path can be a localfile or a to file to download. can be a github/bitbucket/or app-build website link",
+          "NOTE ABOUT HOW TO DOWNLOAD FROM GITHUB": "curl -L https://raw.githubusercontent.com/user/repository/branch/filename",
+          "reformat": "DEFAULT true. ONLY RUNS IF STYLE GUIDES CONTAINS A TYPE MATCHING LANG MATCHING FILETYPE"
+        },
+        "client": {
+          "components": {
+            "app.jsx": {
+              "ABOUT": "app.jsx is a false or an object containing 'populate'",
+              "populate": {
+                "path": "path can be a localfile or a to file to download. can be a github/bitbucket/or app-build website link",
+                "reformat": "DEFAULT True"
+              }
+            }
+          }
+        },
+        "assets": {
+          "styles": {
+            "file.scss": ""
+          }
+        }
+      }
+    }
+  },
+  "style": {
+    "NOTE": "MORE THAN ONE FORMATTER OR STYLE GUIDE OR ONE OF EACH CANNOT EXIST PER LANGUAGE",
+    "formatter": [
+        {
+          "language": "C#",
+          "guide": "DotNet-Code-Formatter"
+        },
+        {
+          "language": "Java",
+          "guide": "Google-Java-Format"
+        },
+        {
+          "language":"JavaScript",
+          "guide": "Standard"
+        },
+        {
+          "language":"PHP",
+          "guide": "Coding-Standards-Fixer"
+        },
+        {
+          "language":"Python",
+          "guide": "Google-YAPF"
+        },
+        {
+          "language":"Ruby",
+          "guide": "Rubocop"
+        },
+        {
+          "language":"LanguageOfChoice",
+          "guide": "Prettier"
+        }
+      ],
+      "styleGuide": {
+        {
+          "language": "javascript",
+          "guide": "airbnb"
+        }
+    },
+    "custom": {
+    "NOTE": "LOAD AND DEFINE CANNOT BOTH BE PRESENT FOR SAME LANG",
+    "load": [
+      {
+        "path": "path to file or github/bitbucket file or code snippet/directory hash on app-create website",
+        "name": "HOW TO NAME????"
+      }
+    ],
+    "define": [
+      {
+        "language": "JavaScript",
+        "indent": {
+          "tab": false,
+          "spaceCount": 2
+        },
+        "quotes": "single"
+      }
+    ]
+  },
+  "configFiles": {
+    "load": [
+
+    ],
+    "define": {
+      "package.json": {
+        "scripts": {
+          "dev": "nodemon src/server"
+        }
+      },
+      "webpack": {
+        "NOTE": "LOAD AND DEFINE CANNOT BOTH BE PRESENT BUT EITHER MUST BE IF WEBPACK EXISTS",
+        "load": [
+          {
+            "path": "path to file or github/bitbucket file or code snippet/directory hash on app-create website",
+            "name": "NAMED AS 'webpack.[name].js'"
+          }
+        ],
+        "define": {
+          "for": "FRAMEWORK React/Angular/Vue",
+          "babelrc": {
+            "details": "here"
+          },
+          "include": {
+            "path": "path to file or github/bitbucket or code snippet hash on app-create website"
+          },
+          "babelPlugins": [
+            "names of babel plugins"
+          ],
+          "code-splitting": {
+            "splitBundleConfigs": [
+              "webpack config file name, e.g. client"
+            ]
+          },
+          "isomorphic": {
+            "client": {
+              "name": "client"
+            },
+            "server": {
+              "name": "server",
+              "entryName": "server"
+            }
+          },
+          "loaders": {
+            "js": {
+              "test": "js|jsx OPTIONAL",
+              "exclude": [
+                "DEFAULT exclude node_modules"
+              ]
+            },
+            "css": {
+              "type": "less|css|sass OPTIONAL css by DEFUALT",
+              "use": [
+                "OPTIONAL ARRAY FOR LOADERS"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "versionControl": {
+    "git": {
+      "remote": "path/to/bitbucket/or/github",
+      "push": {
+        "pushTo": "master|branchName",
+      },
+      "commitMessage": "default set to 'created' if not specified"
+    },
+    "mercurial": {
+      ""
+    }
+  }
+}
+
+```

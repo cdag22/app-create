@@ -1,5 +1,6 @@
 # SDLC Navigation
 
+0. [Home](../../README.md)
 1. Planning and Requirement Analysis
 2. [Defining Requirements](../2_DefiningRequirements/README.md)
 3. [Design and Architecture](../3_DesignAndArchitecture/README.md)
@@ -8,7 +9,7 @@
 
 ## Product Feasibility
 
-No tool exists for generating boilerplate code for web applications other than language specific instances with, limited or no customization available such as React's [create-react-app](https://github.com/facebook/create-react-app). If a highly customizable tool exist that was language agnostic it would aid:
+No tool exists for generating boilerplate code for web applications other than language specific instances that have limited or no customization available such as React's [create-react-app](https://github.com/facebook/create-react-app). If a highly customizable tool exist that was language agnostic it would aid:
 - Those new to web development
 - Those new to a serverside language, database, or framework
 - Those looking to speedup and define a customizable application create process
@@ -16,7 +17,7 @@ No tool exists for generating boilerplate code for web applications other than l
 - Those unfamiliar with the details of setting up a specific build process (e.g. Webpack config)
 - Those looking to easily share a project stepup style or define a conistent project setup style in a streamlined fashion other than copying and pasting code
 
-Bash is supported on all Linux Distros, Mac OS (even though they are switching to Zsh as their default with their new OS Catalina. Since Mac OS is BSD UNIX, bash can be installed if ever removed from future versions of the OS), and can be installed on Windows 10 easily
+Bash may be a good language because it is supported on all Linux Distros, Mac OS (even though they are switching to Zsh as their default with their new OS Catalina. Since Mac OS is BSD UNIX, bash can be installed if ever removed from future versions of the OS), and can be installed on Windows 10 easily
 
 ## Quality Assurance Requirements
 
@@ -26,7 +27,7 @@ Bash is supported on all Linux Distros, Mac OS (even though they are switching t
 - Highly customizable with commandline arguments
 - Is throughly tested in the target language
 - Is tested on all three variants of Operating Systems before deployment
-- Can be installed by all major OS package Managers:
+- Can be packaged and built as installation file types such as ```.pkg``` (Mac OS) for Mac, Windows, and Linux. Alternatively, can be installed by all major OS package Managers as listed below:
 	- WINDOWS: OneGet
 	- MAC OS: Homebrew, Nix, MacPorts, pkgsrc
 	- LINUX: apt, dpkg, RPM, Pacman, Gentoo, Zypper
