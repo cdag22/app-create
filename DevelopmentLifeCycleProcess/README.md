@@ -11,3 +11,5 @@ Each sub folder contains all relivant documentation, research, planning, testing
 4. Building
 5. Testing
 6. Deployment
+7. [Example Output](./7_ExampleOutput/README.md)
+8. [Usage](../FLAGS.md)

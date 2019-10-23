@@ -1,11 +1,18 @@
-# SDLC Navigation
+### SDLC Navigation
 
 0. [Home](../../README.md)
-1. Planning and Requirement Analysis
+1. Planning And Requirement Analysis
 2. [Defining Requirements](../2_DefiningRequirements/README.md)
 3. [Design and Architecture](../3_DesignAndArchitecture/README.md)
+4. Building
+5. Testing
+6. Deployment
+7. [Example Output](../7_ExampleOutput/README.md)
+8. [Usage](../../FLAGS.md)
 
-# Planning and Requirement Analysis
+---
+
+# 1. Planning and Requirement Analysis
 
 ## Product Feasibility
 

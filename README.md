@@ -1,23 +1,50 @@
 # App-Create
 
-## Link for [Development Life Cycle Process -- Agile](./DevelopmentLifeCycleProcess/README.md)
+## [System Development Life Cycle](./DevelopmentLifeCycleProcess/README.md) -- Agile Methodology
 
-[SDLC description from tutorialspoint.com](https://www.tutorialspoint.com/sdlc/sdlc_overview.html)
+[SDLC description from tutorialspoint.com](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm)
 
 ## Usage
 
-[Command Line Flags and arguments](./Flags.md)
+*[Command Line Flags and arguments](./Flags.md)*
 
 ## Current Support
 
-### 1. Languages
+### 1. Server-side Languages, Frameworks, and Database ORMs or Query Builders
 
-### 2. Frameworks
+#### Node
+
+*Frameworks*
+
+- Express
+
+*Working with SQL*
+
+- Sequelize.js
+- Knex.js
+
+### 2. Front-end Frameworks and Libraries
+
+### Building Frameworks
+
+- React.js
+
+#### State Management Frameworks
+
+- Redux.js
 
 ### 3. Databases
 
-### 4. Style Guides by Languages
+- PostgreSQL
+- MySQL
+- SQlite3
 
-### 5. Style Formatters by Languages
+### 4. Style Formatters by Languages
 
-### 6. Version Control Systems and Sites
+#### JavaScript
+
+- Prettier
+
+### 5. Version Control Sites for Git
+
+- GitHub

@@ -1,9 +1,16 @@
-# SDLC Navigation
+### SDLC Navigation
 
 0. [Home](../../README.md)
 1. [Planning And Requirement Analysis](../1_PlanningAndAnalysis/README.md)
 2. [Defining Requirements](../2_DefiningRequirements/README.md)
 3. Design and Architecture
+4. Building
+5. Testing
+6. Deployment
+7. [Example Output](../7_ExampleOutput/README.md)
+8. [Usage](../../FLAGS.md)
+
+---
 
 # 3. Design and Architecture: Design Specification
 
