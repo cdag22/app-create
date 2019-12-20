@@ -4,8 +4,32 @@
 
 Each phase will contain support through commandline arguments and ship with default boilerplate for those listed in their corresponding **```Config.json```**.
 
-
 ## 1st Iteration
+
+The minimum viable product will allow for easily creating a custom project from scratch. ```config.json``` will not be supported yet. Either in a empty Github repo or through connecting an empty project to a github repo.
+
+It will be Node based and allow for quickly installing npm packages automatically.
+
+It will support basic configuration and some template for Webpack, React, vanilla JS, jQuery, HTML, and CSS.
+
+CSS templates will be either raw CSS, Sass, Less, or Styled Components. It will allow for integration, templates, and setup with Bootstrap, Materialize, Foundation, UIKit, and Semantic UI Frameworks.
+
+It will come with predefined options of quick insertion for color templates, or create of color templates.
+
+It will implement the template tagging system for saved templates.
+
+It will at the bear minimum require:
+  - Setup of an ```index.html```
+  - Creation of one CSS file
+  - Creation of all bear minimum JavaScript Files based on whether the project is:
+    * Vanilla JavaScript
+    * jQuery
+    * React (along with the requirement of a basic Webpack File; and question about where to install babel config. Default is .babelrc)
+
+It will allow for the customization of the default questions asked through the flag ```--config``` which will take in either **css**, **html**, **js**, or **gui**. If **gui** is entered then a configuration menu will pop up with options to set a custom profile.
+
+
+## 2nd Iteration
 
 The minimum viable product will contain customization through a ```config.json``` for
 
@@ -33,7 +57,7 @@ The minimum viable product will contain customization through a ```config.json``
 
 #### **All of the following Command Line Arguments will be supported. [See here.](../../FLAGS.md)**
 
-## 2nd Iteration
+## 3rd Iteration
 
 The minimum viable product will contain customization through a config.json for
 
@@ -48,7 +72,7 @@ The minimum viable product will contain customization through a config.json for
 - BitBucket
 - add support for pulling snippets from [Bit](https://github.com/teambit/bit)
 
-## 3rd Iteration --> Adding Three Server-side Languages and Apache/NginX Support
+## 4th Iteration --> Adding Three Server-side Languages and Apache/NginX Support
 
 The minimum viable product will contain customization through a ```config.json``` for
 
@@ -63,7 +87,7 @@ The minimum viable product will contain customization through a ```config.json``
     - Python: Flask and Django
     - Ruby On Rails
 
-## 4th Iteration --> Adding Five biggest (excluding React.js) Front-end Frameworks
+## 5th Iteration --> Adding Five biggest (excluding React.js) Front-end Frameworks
 
 The minimum viable product will contain customization through a ```config.json``` for
 
@@ -77,14 +101,14 @@ The minimum viable product will contain customization through a ```config.json``
     - Ember.js
 - Adding support for all Frameworks between GraphQL, Redux and the new one MobX
 
-## 5th Iteration --> Companion Site
+## 6th Iteration --> Companion Site
 
 - building companion site and addition of ```--share``` flag. Companion site will have:
     - Login integration with github for connection of storing boilerplate to github
     - via the ```--share``` flag users can upload config files or links to their github boilerplate on the companion site
     - Extending the ```--import [url]``` flag to allow for downloading of ```config.json``` files from the companion site
 
-## 6th Iteration --> Three more Serverside Languages
+## 7th Iteration --> Three more Serverside Languages
 
 The minimum viable product will contain customization through a ```config.json``` for
 
@@ -99,7 +123,7 @@ The minimum viable product will contain customization through a ```config.json``
     - GO (frameworks?)
     - C# and .NET (frameworks?)
 
-## 7th Iteration --> Adding Integration with NoSQL Databases
+## 8th Iteration --> Adding Integration with NoSQL Databases
 
 The minimum viable product will contain customization through a ```config.json``` for
 
